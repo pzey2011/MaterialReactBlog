@@ -12,6 +12,7 @@ export default class App extends React.Component {
     this.state = {
       cards: []
     };
+    this.addBlog = this.addBlog.bind(this);
   }
   componentDidMount() {
     let cardsArray = [];
@@ -31,13 +32,29 @@ export default class App extends React.Component {
         imageUrl="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=01a9a264e737622958245b0f55a6e943&w=1000&q=80"
       />
     );
+  }
+  addBlog(data) {
+    console.log(data);
+    let newCard = (
+      <Card
+        title={data.title}
+        content={data.content}
+        imageUrl={data.imageUrl}
+      />
+    );
+    let cardsArray = [...this.state.cards];
+    cardsArray.push(newCard);
     this.setState({ cards: cardsArray });
   }
   render() {
     return (
       <React.Fragment>
         {this.state.cards}
-        <AddPostForm />
+        <AddPostForm
+          dataCallBack={data => {
+            this.addBlog(data);
+          }}
+        />
       </React.Fragment>
     );
   }

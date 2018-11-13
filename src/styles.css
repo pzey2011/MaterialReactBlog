@@ -19,6 +19,11 @@ html {
 }
 .card-details {
   padding: 5px 15px;
+  align-items: center;
+}
+.card-form {
+  padding: 5px 15px;
+  align-items: center;
 }
 .card-head {
   font-weight: 400;
@@ -35,21 +40,37 @@ html {
   text-decoration: none;
 }
 .card-action-add-button {
-  margin: 0 auto;
+  padding-left: 100px;
+  margin-top: 50px;
 }
 .card-action-button:hover {
   background-color: rgba(255, 168, 58, 0.2);
 }
 .card-textarea {
-  background-color: aliceblue;
+  width: 80%;
+}
+.card-add-button {
 }
 .card-textarea-title-container {
-  margin-bottom: 20px;
+  margin: 20px;
   border-color: blue;
   width: 100%;
 }
 .card-textarea-content-container {
-  margin-bottom: 20px;
+  margin: 20px;
   border-color: blue;
   width: 100%;
+}
+.upload-container {
+  margin-left: 20px;
+  display: flex;
+}
+.upload-button-container {
+  margin-right: 10px;
+}
+.path-container {
+  width: 50%;
+}
+.upload-button {
+  margin-left: 5px;
 }
