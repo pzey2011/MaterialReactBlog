@@ -1,2 +1,0 @@
-# MaterialReactBlog
-Created with CodeSandbox

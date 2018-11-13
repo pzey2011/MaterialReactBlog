@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+html {
+  background-color: #ededed;
+  font: normal 14px / 20px "Roboto", sans-serif;
+  padding: 0 0 25px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.25), 1px 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 340px;
+}
+.card-media {
+  width: 100%;
+}
+.card-details {
+  padding: 5px 15px;
+}
+.card-head {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.card-action-button {
+  border-radius: 2px;
+  color: #ffab40;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+  font-weight: 500;
+  text-decoration: none;
+}
+.card-action-add-button {
+  margin: 0 auto;
+}
+.card-action-button:hover {
+  background-color: rgba(255, 168, 58, 0.2);
+}
+.card-textarea {
+  background-color: aliceblue;
+}
+.card-textarea-title-container {
+  margin-bottom: 20px;
+  border-color: blue;
+  width: 100%;
+}
+.card-textarea-content-container {
+  margin-bottom: 20px;
+  border-color: blue;
+  width: 100%;
+}
