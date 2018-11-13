@@ -2,6 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Card from "./card";
 import AddPostForm from "./add_post_form";
+import Button from "@material-ui/core/Button";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
 
 import AddIcon from "@material-ui/icons/Add";
 import "./styles.css";
@@ -50,6 +56,21 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <AppBar position="static">
+          <Toolbar>
+            <IconButton
+              className="menu-button"
+              color="inherit"
+              aria-label="Menu"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" color="inherit" className="grow">
+              News
+            </Typography>
+            <Button color="inherit">Login</Button>
+          </Toolbar>
+        </AppBar>
         {this.state.cards}
         <AddPostForm
           dataCallBack={data => {
