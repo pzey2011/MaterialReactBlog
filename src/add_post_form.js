@@ -36,6 +36,7 @@ export default class AddPostForm extends React.Component {
     return (
       <div className="card">
         <div className="card-form">
+          <h3>New Blog</h3>
           <div className="card-textarea-title-container">
             <TextField
               label="Title"
